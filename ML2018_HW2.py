@@ -30,4 +30,4 @@ print(X_test.shape)
 print(Y_test.shape)
 
 clf = NuSVC()
-clf.fit(X, Y)
+clf.fit(X_train, Y_train)
