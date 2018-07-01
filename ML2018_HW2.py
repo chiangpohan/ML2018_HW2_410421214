@@ -2,7 +2,7 @@ import numpy as np
 import sys, io
 from sklearn.model_selection import train_test_split
 from sklearn import svm, datasets
- from sklearn.svm import NuSVC
+from sklearn.svm import NuSVC
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
@@ -28,3 +28,6 @@ print(X_train.shape)
 print(Y_train.shape)
 print(X_test.shape)
 print(Y_test.shape)
+
+clf = NuSVC()
+clf.fit(X, Y)
