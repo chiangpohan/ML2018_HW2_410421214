@@ -31,3 +31,19 @@ print(Y_test.shape)
 
 clf = NuSVC()
 clf.fit(X_train, Y_train)
+TEST=clf.predict(X_test)
+TRAIN=clf.predict(X_train)
+count=0
+for i in range(Y_train.shape[0]):
+    if TRAIN[i]==Y_train[i]:
+        count=count+1
+
+print(count/Y_train.shape[0])
+
+
+count=0
+for i in range(Y_test.shape[0]):
+    if TEST[i]==Y_test[i]:
+        count=count+1
+
+print(count/Y_test.shape[0])
