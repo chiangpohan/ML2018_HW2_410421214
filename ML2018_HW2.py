@@ -2,7 +2,7 @@ import numpy as np
 import sys, io
 from sklearn.model_selection import train_test_split
 from sklearn import svm, datasets
-from sklearn.linear_model import SGDClassifier
+ from sklearn.svm import NuSVC
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
